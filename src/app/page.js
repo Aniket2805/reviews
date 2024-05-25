@@ -1,5 +1,5 @@
 "use client";
-import * as React from "react";
+import { useState } from "react";
 import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
 import { IoMdThumbsUp } from "react-icons/io";
@@ -7,11 +7,11 @@ import { IoMdThumbsDown } from "react-icons/io";
 import Link from "next/link";
 
 export default function page() {
-  const [upactive, setUpActive] = React.useState(false);
-  const [downactive, setDownActive] = React.useState(false);
-  const [goodactive, setGoodActive] = React.useState(false);
-  const [averageactive, setAverageActive] = React.useState(false);
-  const [badactive, setBadActive] = React.useState(false);
+  const [upactive, setUpActive] = useState(false);
+  const [downactive, setDownActive] = useState(false);
+  const [goodactive, setGoodActive] = useState(false);
+  const [averageactive, setAverageActive] = useState(false);
+  const [badactive, setBadActive] = useState(false);
   return (
     <div className="h-screen flex justify-center items-center bg-slate-300">
       <div className="px-10 py-10 bg-white rounded-3xl shadow-[0_20px_30px_-4px_rgba(0,0,0,0.8)]">
